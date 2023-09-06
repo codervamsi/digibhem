@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="digital.js"></script>
+</head>
+<body>
+    <fieldset class="field">
+        <div class="di"><br><br>
+    <center><h3> << HOTEL BOOKING REGISTRATION FORM >></h3><br></center><br>
+    <h3><i>Customers Info:</i></h3><br>
+    <label for="FirstName">First Name:<p style="color: crimson;margin-bottom:7px">*</p></label>
+    <input type="text" placeholder="FirstName" style="width: 25%;height:1.3%;font-size:large;background-color:rgb(221, 221, 221)">
+    <label for="LastName">Last Name:<p style="color: crimson;margin-bottom:7px">*</p> </label>
+    <input type="text" placeholder="LastName"style="width: 25%;height:1.3%;font-size:large;background-color:rgb(221, 221, 221)"><br><br><br>
+    <label for="Check-inDate">Check-in Date:<p style="color: crimson;margin-bottom:7px">*</p> </label>
+    <input type="date"style="width: 46%;height:1.3%;font-size:large;background-color:rgb(221, 221, 221)" id="Check-inDate"><br><br><br>
+    <label for="TotalNoofDays">Total No of Days:<p style="color: crimson;margin-bottom:7px">*</p> </label>
+    <input type="text" placeholder="Total No of Days" style="width: 43%;height:1.3%;font-size:large;background-color:rgb(221, 221, 221)" id="TotalNoofDays"><br><br><br>
+    <label for="TotalNoofPersons">Total No of Persons:<p style="color: crimson;margin-bottom:7px">*</p> </label>
+    <input type="text" placeholder=" Total No of Persons"style="width: 40%;height:1.3%;font-size:large;background-color:rgb(221, 221, 221)" id="TotalNoofPersons"><br><br><br>
+    <h3><i>About Rooms:</i></h3><br>
+    <label for="RoomType">Room Type:</label> 
+    <select id="RoomType"style="width: 30%;height:1.3%;font-size:large;">
+        <option value="0">Select</option>
+        <option value="2500">Delux Room(2500/-)</option>
+        <option value="4000">Suite Room(4000/-)</option>
+    </select><br><br>
+    <label for="Amenities">Amenities:</label> 
+    <select id="Amenities"style="width: 30%;height:1.3%;font-size:large;">
+        <option value="0">Select</option>
+        <option value="1000">AC(1000/-)</option>
+        <option value="300">Locker(300/-)</option>
+    </select><br><br><br>
+   <center><h4 style="margin-left: 100px;"> << ADVANCE AMOUNT FOR BOOKING >> </h4></center><br><br>
+    <label for="AdvanceAmount">Advance Payment:<p style="color: crimson;margin-bottom:7px">*</p></label>
+    <input type="text" placeholder="Advance Payment"style="width: 40%;height:1.3%;font-size:large;" id="AdvanceAmount"><br><br>
+    <center><button style="background-color: rgb(49, 172, 69);width:100px;height:30px" onclick="main()">Calculate</button></center><br><br>
+    <center><h4> << TOTAL COST >> </h4></center><br>
+    <label for="TotalRoomCost">Total Room Cost:</label>
+    <input type="text" placeholder="Total Room Cost"style="width: 43%;height:1.3%;font-size:large;" id="TotalRoomCost"><br><br>
+    <label for="TotalAmenitiesCost">Total Amenities Cost:</label>
+    <input type="text" placeholder="Total Amenities Cost"style="width: 38%;height:1.3%;font-size:large;" id="TotalAmenitiesCost"><br><br><br>
+    <h5> <i>If Persons Exceeds 2,then Per Day Cost For Extra Person;1000/-</i><p style="color: crimson;">*</p></h5><br><br>
+    <label for="AdditionalCharges">Additional Charges:<p style="color: crimson;margin-bottom:7px">*</p></label>
+    <input type="text" placeholder="Additional Charges"style="width: 25%;height:1.3%;font-size:large;" id="AdditionalCharges">
+    <label for="TotalCost">Total Cost:</label>
+    <input type="text" placeholder="Total Cost"style="width: 25%;height:1.3%;font-size:large;" id="TotalCost"><br><br>
+    <center><h3> << Balance Amount >> </h3></center><br>
+    <label for="BalanceAmount">Balance Amount:</label>
+    <input type="text" placeholder="Balance Amount"style="width: 43%;height:1.3%;font-size:large;" id="BalanceAmount"><br><br><br>
+    <div style="display: flex;flex-direction:row ;margin-left:100px">
+    <input type="checkbox"><p>Conditions apply for Everyone</p></div><br><br>
+    <center><button style="background-color: rgb(67, 174, 97);width:100px;height:30px">Register</button></center></div>
+</fieldset>
+<center><h3 style="color: crimson;">Thank You!!</h3></center>
+<center><h6>**Visit Again**</h6></center>
+</body>
+</html>
